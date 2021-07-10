@@ -6,6 +6,7 @@
 -->
 <html>
 	<head>
+		<embed src="audio/rocsong.mp3" autostart=true hidden=true>
 		<title>Max Coding Life</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -16,6 +17,7 @@
 	</head>
 	<body class="is-preload">
 		<!-- Wrapper -->
+
 			<div id="wrapper">
 				<!-- Header -->
 					<header id="header">
@@ -52,9 +54,78 @@
 								<li><a href="#contact">Contact</a></li>
 							</ul>
 						</nav>
+						<marquee><body><h1>聽首歌放輕鬆一下吧！！！ Listen a song and be relax!!!</h1></body></marquee>
+						<script language="javascript">
+						const audio = document.createElement("audio");
+								var x;
+								function playAudio() {
+									alert("音樂加載需要時間，請等候幾秒鐘，謝謝。(若時間加載過15秒，請重新按按鈕)");
+									alert("目前只有3首歌，以後會增加更多歌，謝謝各位欣賞。")
+								function getRandomInt(max) {
+								  return Math.floor(Math.random() * max);
+								}
+								x = getRandomInt(2);
+								switch(x){
+									case 0:
+										audio.src = "audio/rocsong.mp3";
+										audio.play();
+										break;
+									case 1:
+										audio.src = "audio/home.mp3";
+										audio.play();
+										break;
+									case 2:
+										audio.src = "audio/lovedontcry.mp3";
+										audio.play();
+										break;
+								}
+								}
+								function closeAudio() {
+									audio.src = "audio/rocsong.mp3";
+									audio.pause();
+								}
+								function changeAudio(){
+									var y;
+									if(x === 2){
+										x = 0;
+									}
+									else{
+										x = x+1;
+									}
+									switch(x){
+										case 0:
+											audio.src = "audio/rocsong.mp3";
+											audio.play();
+											break;
+										case 1:
+											audio.src = "audio/home.mp3";
+											audio.play();
+											break;
+										case 2:
+											audio.src = "audio/lovedontcry.mp3";
+											audio.play();
+											break;
+									}
+								}
+						</script>
+							<ul>
+								<button onclick="playAudio();"><a class="button">MUSIC ON</a></button>
+								<button onclick="closeAudio();"><a class="button">MUSIC OFF</a></button>
+								<button onclick="changeAudio();"><a class="button">CHANGE SONG</a></button>
+							</ul>
+
 					</header>
 				<!-- Main -->
+
 					<div id="main">
+						<article id="muson">
+							<!-- <h2 class="major">Intro</h2> -->
+							<span class="image main"><img src="images/ROC.jpg" alt="" /></span>
+						</article>
+						<!-- <article id="intro">
+							<h2 class="major">Intro</h2>
+							<span class="image main"><img src="images/ROC.jpg" alt="" /></span>
+						</article> -->
 						<!-- Intro -->
 							<article id="intro">
 								<h2 class="major">Intro</h2>
@@ -141,6 +212,9 @@
 								預計在8/31號前上傳完畢。
 								<br><br>
 								<hr>
+								<h1>文章看多了也會累，何不去聽一下歌呢？按文章底部那顆箭頭移置網頁最上方，再按叉叉回到主頁聽一下歌、休息一下吧！</h1>
+								<br><br>
+								<hr>
 								<marquee><h1>comming soon</h1></marquee>
 								<br><br>
 							</article>
@@ -156,6 +230,7 @@
 							</article>
 						<!-- Contact -->
 							<article id="contact">
+								<embed src="audio/rocsong.mp3" hidden="true" autostart="true"/>
 								<h2 class="major">Contact</h2>
 								如果我的文章有任何問題/錯誤，或者圖片有版權問題請務必用以下社群軟體跟我聯絡，謝謝。
 								<br>
@@ -963,4 +1038,6 @@ node c[<span class="hljs-number" style="color: rgb(136, 0, 0);">10001</span>];
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 	</body>
+<body>dsf</body>
+aaaa
 </html>
