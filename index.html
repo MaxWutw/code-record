@@ -11,6 +11,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- <script>alert("hwllo");</script> -->
 	</head>
 	<body class="is-preload">
 		<!-- Wrapper -->
@@ -31,8 +33,8 @@
 								</td>
 							</tr>
 						</tbody>
-						</table>
-						</center>
+					</table>
+				</center>
 						<div class="logo">
 							<span class="icon fa-gem"></span>
 						</div>
@@ -57,10 +59,32 @@
 							<article id="intro">
 								<h2 class="major">Intro</h2>
 								<span class="image main"><img src="images/ROC.jpg" alt="" /></span>
-								<p>感謝各位參觀，此網站會紀錄我在資訊科技領域的學習筆記，平時主要學習內容為C++解題以及python機器學習，偶爾會開發物聯網，或玩玩Arduino，由於有課業要求，所以更新資料速度會很慢，請多見諒。</p>
+								<h1>前提：</h1>
+								<p>感謝各位參觀，此網站會紀錄我在資訊科技領域的學習筆記，資料主要更新內容為C++知識以及python機器學習，偶爾會開發物聯網，或玩玩Arduino，此處文章皆個文著作，若撰寫資料有誤，請務必告知，
+									謝謝。在大多數文章中皆為基礎，但不適合完全沒相關知識的人閱讀，在閱讀文章之前有相關基本知識可以閱讀的比較輕鬆，由於有課業要求，所以更新資料速度會很慢，請多見諒。</p>
+								<br><br>
+								<h1>作者介紹：</h1>
+								<p>本人為一高中生，平時在家就打打程式，假日會出門打球，最長使用C/C++和Python，最近嘗試學習git和Linux server，希望以後有機會可以做這類的學習筆記，大概等個兩三年吧，
+									文章內容撰寫通常是使用HackMD，因為HackMD的使用方式較為簡單、方便，只有在Arduino和esp8266 module的部分才會實際寫在網頁上，因為在網頁上比較能顯現Arduino和esp8266 module的特色，詳情請看我的code works，
+								感謝各位的參觀。</p>
 							</article>
 						<!-- Work -->
 							<article id="work">
+								<button type="button" id="BackTop" class="toTop-arrow"></button>
+								<script>
+								$(function(){
+									$('#BackTop').click(function(){
+										$('html,body').animate({scrollTop:0}, 333);
+									});
+									$(window).scroll(function() {
+										if ( $(this).scrollTop() > 300 ){
+											$('#BackTop').fadeIn(222);
+										} else {
+											$('#BackTop').stop().fadeOut(222);
+										}
+									}).scroll();
+								});
+								</script>
 								<h2 class="major">My coding record</h2>
 								<span class="image main"><img src="images/AI.gif" alt="" /></span>
 								<br>
@@ -118,6 +142,7 @@
 								<br><br>
 								<hr>
 								<marquee><h1>comming soon</h1></marquee>
+								<br><br>
 							</article>
 						<!-- entertainment -->
 							<article id="entertain">
@@ -141,6 +166,7 @@
 									<li><a href="https://instagram.com/chisc_long?r=nametag" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
 									<li><a href="https://github.com/MaxWutw" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 								</ul>
+								<span class="image main"><img src="images/cool.gif" alt="" /></span>
 							</article>
 							<article id="ccpp">
 								<h2 class="major">C/C++筆記</h2>
@@ -393,7 +419,7 @@ void loop() {
 	<p>實際操作影片：</p>
 	<!-- /wp:paragraph -->
 	<video width = "590" height = "400" controls>
-			<source src="images/sg90vedio.mp4" type="video/mp4">
+			<source src="sg90vedio.mp4" type="video/mp4">
 	</video>
 							</article>
 
@@ -914,8 +940,6 @@ node c[<span class="hljs-number" style="color: rgb(136, 0, 0);">10001</span>];
     <span class="hljs-keyword" style="font-weight: 700;">return</span> <span class="hljs-number" style="color: rgb(136, 0, 0);">0</span>;
 }</pre>
 </article>
-
-
 
 
 
