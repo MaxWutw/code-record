@@ -29,7 +29,6 @@
 											<strong>
 												<marquee bgcolor="red" style="WIDTH: 500px; HEIGHT: 32px">歡迎蒞臨Max Coding Life</marquee>
 												<marquee style="WIDTH: 500px; HEIGHT: 62px">Welcome to Max Coding Life</marquee>
-	
 											</strong>
 										</font>
 									</p>
@@ -57,11 +56,11 @@
 						</nav>
 						<marquee><body><h1>聽首歌放輕鬆一下吧！！！ Listen a song and be relax!!!</h1></body></marquee>
 						<script language="javascript">
-						const audio = document.createElement("audio");
+								const audio = document.createElement("audio");
 								var x;
 								function playAudio() {
 									alert("音樂加載需要時間，請等候幾秒鐘，謝謝。(若時間加載過15秒，請重新按按鈕)");
-									alert("目前只有3首歌，以後會增加更多歌，謝謝各位欣賞。")
+									alert("目前有17首歌，以後會增加更多歌，謝謝各位欣賞。")
 								function getRandomInt(max) {
 								  return Math.floor(Math.random() * max);
 								}
@@ -79,15 +78,70 @@
 										audio.src = "audio/lovedontcry.mp3";
 										audio.play();
 										break;
+									case 3:
+										audio.src = "audio/mouth.mp3";
+										audio.play();
+										break;
+									case 4:
+										audio.src = "audio/moontrouble.mp3";
+										audio.play();
+										break;
+									case 5:
+										audio.src = "audio/intention.mp3";
+										audio.play();
+										break;
+									case 6:
+										audio.src = "audio/practice.mp3";
+										audio.play();
+										break;
+									case 7:
+										audio.src = "audio/broken.mp3";
+										audio.play();
+										break;
+									case 8:
+										audio.src = "audio/sea.mp3";
+										audio.play();
+										break;
+									case 9:
+										audio.src = "audio/hair.mp3";
+										audio.play();
+										break;
+									case 10:
+										audio.src = "audio/quite.mp3";
+										audio.play();
+										break;
+									case 11:
+										audio.src = "audio/looku.mp3";
+										audio.play();
+										break;
+									case 12:
+										audio.src = "audio/together.mp3";
+										audio.play();
+										break;
+									case 13:
+										audio.src = "audio/sad.mp3";
+										audio.play();
+										break;
+									case 14:
+										audio.src = "belief/hair.mp3";
+										audio.play();
+										break;
+									case 15:
+										audio.src = "howmanylove/quite.mp3";
+										audio.play();
+										break;
+									case 16:
+										audio.src = "audio/norway.mp3";
+										audio.play();
+										break;
 								}
 								}
 								function closeAudio() {
-									audio.src = "audio/rocsong.mp3";
+									// audio.src = "audio/rocsong.mp3";
 									audio.pause();
 								}
 								function changeAudio(){
-									var y;
-									if(x === 2){
+									if(x === 16){
 										x = 0;
 									}
 									else{
@@ -104,6 +158,62 @@
 											break;
 										case 2:
 											audio.src = "audio/lovedontcry.mp3";
+											audio.play();
+											break;
+										case 3:
+											audio.src = "audio/mouth.mp3";
+											audio.play();
+											break;
+										case 4:
+											audio.src = "audio/moontrouble.mp3";
+											audio.play();
+											break;
+										case 5:
+											audio.src = "audio/intention.mp3";
+											audio.play();
+											break;
+										case 6:
+											audio.src = "audio/practice.mp3";
+											audio.play();
+											break;
+										case 7:
+											audio.src = "audio/broken.mp3";
+											audio.play();
+											break;
+										case 8:
+											audio.src = "audio/sea.mp3";
+											audio.play();
+											break;
+										case 9:
+											audio.src = "audio/hair.mp3";
+											audio.play();
+											break;
+										case 10:
+											audio.src = "audio/quite.mp3";
+											audio.play();
+											break;
+										case 11:
+											audio.src = "audio/looku.mp3";
+											audio.play();
+											break;
+										case 12:
+											audio.src = "audio/together.mp3";
+											audio.play();
+											break;
+										case 13:
+											audio.src = "audio/sad.mp3";
+											audio.play();
+											break;
+										case 14:
+											audio.src = "belief/hair.mp3";
+											audio.play();
+											break;
+										case 15:
+											audio.src = "howmanylove/quite.mp3";
+											audio.play();
+											break;
+										case 16:
+											audio.src = "audio/norway.mp3";
 											audio.play();
 											break;
 									}
@@ -174,7 +284,6 @@
 								<ul>
 									<li><h2><a href = "https://hackmd.io/@Maxlight/rk53Ldvod">機器學習與Tensorflow</a></h2></li>
 									<li><h2><a href = "https://hackmd.io/@Maxlight/SJjIHd63_">機器學習與Pytorch</a></h2></li>
-									<li><h2><a href = "">影像辨識MNIST手寫數字辨識</a></h2></li>
 							 </ul>
 								<br>
 								<hr>
@@ -278,13 +387,6 @@
 									</ol>
 								</ul>
 							</article>
-					
-	
-					<!--  MNIST	 -->
-						<article id="mnist">
-							<h2 class="major">Intro</h2>
-							<span class="image main"><img src="images/ROC.jpg" alt="" /></span>
-						</article>
 							<article id="dht">
 								<h2 class="major">DTT11搭配esp8266(IOT實現)</h2>
 								<input type ="button" onclick="javascript:location.href='#work'" value="Menu"></input>
